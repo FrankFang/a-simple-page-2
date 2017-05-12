@@ -1,0 +1,146 @@
+/*topbar*/
+section#topbar {
+  height: 40px;
+}
+section#topbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+section#topbar.sticky > nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+section#topbar .logo {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+}
+/*--------------------------------------------*/
+/*site banners*/
+section#siteBanners {
+  z-index: 0;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section#siteBanners > ol {
+}
+section#siteBanners > ol > li {
+  position: relative;
+  border: 1px solid red;
+}
+section#siteBanners > ol > li > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section#siteBanners > ol > li > img {
+  vertical-align: top;
+}
+/*--------------------------------------------*/
+/*section#siteIntroduce */
+section#siteIntroduce {
+  margin: 20px 0;
+}
+section#siteIntroduce > ul > li {
+  display: flex;
+  margin: 20px 0;
+}
+section#siteIntroduce > ul > li > p {
+  border: 1px solid red;
+  flex-grow: 1;
+  padding: 1em;
+}
+section#siteIntroduce > ul > li img {
+  vertical-align: top;
+}
+@media (max-width: 425px) {
+  section#siteIntroduce > ul > li img {
+    max-width: 200px;
+  }
+}
+section#siteIntroduce > ul > li:nth-child(odd) > .imageWrapper {
+  order: 2
+}
+section#siteIntroduce > ul > li:nth-child(odd) > p {
+  order: 1
+}
+/*--------------------------------------------*/
+section#siteProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  border: 1px solid blue;
+  background: url(https://ooo.0o0.ooo/2017/05/12/5915beddc43e1.jpg) no-repeat center center;
+  background-size: cover;
+}
+section#siteProducts h2 {
+  text-align: center;
+}
+section#siteProducts ul {
+  max-width: 504px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  section#siteProducts ul {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  section#siteProducts ul {
+    max-width: none;
+  }
+}
+section#siteProducts ul > li {
+  margin: 0 24px;
+}
+/*--------------------------------------------*/
+
+section#siteAlbum {
+  background: #dddddd;
+  padding: 20px 0;
+}
+section#siteAlbum h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+section#siteAlbum > .inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/*--------------------------------------------*/
+footer {
+  background: #666;
+  text-align: center;
+  padding: 10px 0;
+}
+#goTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  padding: 1em;
+  z-index: 1;
+}
+#canvasWrapper {
+  position: relative;
+  height: 100vh;
+}
+#canvasWrapper .controls {
+  position: absolute;
+  bottom: 0; right: 0;
+  z-index:1;
+}
